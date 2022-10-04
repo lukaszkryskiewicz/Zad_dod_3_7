@@ -104,6 +104,7 @@ body {
     text-align: left;
     letter-spacing: 1.5px;
     line-height: normal;
+    margin: 165px 0 72px 0;
 
 }
 
@@ -297,6 +298,10 @@ body {
 
     .photo-img {
         margin: auto auto;
+        
+        img {
+            height: 500px;
+        }
     }
 
     .photo-text {
@@ -310,8 +315,17 @@ body {
 
 /* Mac */
 
+.mac-img {
+    margin: auto auto;
+    
+    img {
+        height: 500px;
+    }
+}
+
 .mac-text {
     flex: 0 0 50%;
+    margin: auto auto;
 }
 
 /* Opinions */
@@ -389,21 +403,34 @@ body {
 
 .our-services {
     background-color: rgba(237, 239, 241, 0.35);
-    
+
+    .wrapper {
+        padding: 160px 0;
+    }
+
     
     .services {
         display: flex;
         flex: 0 0 50%;
+        margin: 46px 0;
     
         .services-icon {
             flex: 0 0 15%;
+            height: 94px;
+            width: 94px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: relative;
+            
             
             .services-icon-image {
-                width: 94px;
-                height: 94px;
-                background-color: #ffffff;
-                border-radius: 50%;
-                padding: 31px;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
             }
         }
         
@@ -417,12 +444,13 @@ body {
             letter-spacing: normal;
             line-height: 95.82px;
             text-align: left;
+            margin-left: 50px;
             
             .services-title {
                 font-style: normal;
                 letter-spacing: 1.5px;
                 line-height: normal;
-                margin: 0;
+                margin: 0 0 43px 0;
             }
             
             .services-paragraph {
